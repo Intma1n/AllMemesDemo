@@ -4,7 +4,7 @@ from django.db import models
 
 
 class Meme(models.Model):
-    picture = models.ImageField(upload_to='memes/')
+    picture = models.ImageField(upload_to='src/components/memes/')
     published = models.DateField(auto_now_add=True)
 
     def __str__(self):
